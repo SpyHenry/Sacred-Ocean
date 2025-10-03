@@ -1,0 +1,428 @@
+/* ========================================
+   OCEAN GUARDIAN - GLOBAL STYLES
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Variáveis */
+:root {
+    --ocean-blue: #006994;
+    --deep-blue: #003d5c;
+    --dark-blue: #1e3a8a;
+    --aqua: #00a8cc;
+    --light-blue: #87ceeb;
+    --seafoam: #4fb3d9;
+    --coral: #ff7f7f;
+    --wave-white: rgba(255, 255, 255, 0.8);
+    --glass-bg: rgba(0, 105, 148, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #001e3c 0%, #003d5c 50%, #006994 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 30, 60, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(79, 179, 217, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--light-blue);
+}
+
+.nav-logo i {
+    color: var(--seafoam);
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--light-blue);
+    background: rgba(79, 179, 217, 0.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: var(--light-blue);
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+/* Sections */
+.section {
+    display: none;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.section.active {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--seafoam) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3) saturate(1.2);
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #87ceeb 0%, #4fb3d9 50%, #00a8cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(79, 179, 217, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(79, 179, 217, 0.5);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--seafoam);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Loading Content */
+.loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.loading-content i {
+    font-size: 3rem;
+    color: var(--seafoam);
+    margin-bottom: 1rem;
+}
+
+.content-loaded {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(79, 179, 217, 0.3);
+}
+
+/* Standalone Pages Styles */
+.page-content {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--seafoam) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   LAYOUT GLOBAL
+   ======================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.page-content {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--seafoam) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.loading-content i {
+    font-size: 3rem;
+    color: var(--seafoam);
+    margin-bottom: 1rem;
+}
+
+.content-loaded {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(79, 179, 217, 0.3);
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: rgba(0, 30, 60, 0.95);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        border-top: 1px solid rgba(79, 179, 217, 0.3);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav-container {
+        padding: 1rem;
+    }
+}
+
+/* Page-specific responsive adjustments */
+@media (max-width: 768px) {
+    .page-content {
+        padding-top: 90px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .page-header {
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+}

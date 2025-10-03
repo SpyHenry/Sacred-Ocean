@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/style/global.css">
+    <link rel="stylesheet" href="./src/assets/style/educacao.css">
+    <link rel="icon" type="image/png" href="./src/assets/images/whale.png">
+    <title>Sacred Ocean - Educação Marinha</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-water"></i>
+                <span>Sacred Ocean</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="ongs.html" class="nav-link">ONGs</a></li>
+                <li><a href="educacao.html" class="nav-link active">Educação Marinha</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Education Content -->
+    <main class="page-content">
+        <div class="bg-video2">
+            <video autoplay loop muted>
+                <source src="./src/assets/videos/background-video.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Educação Marinha</h1>
+                <p class="page-subtitle">Explore o fascinante mundo dos oceanos</p>
+            </div>
+            
+            <!-- Categorias de Conteúdo -->
+            <div class="education-nav">
+                <button class="edu-tab active" data-tab="videos">
+                    <i class="fas fa-play-circle"></i>
+                    Vídeos
+                </button>
+                <button class="edu-tab" data-tab="articles">
+                    <i class="fas fa-newspaper"></i>
+                    Artigos
+                </button>
+                <button class="edu-tab" data-tab="sounds">
+                    <i class="fas fa-volume-up"></i>
+                    Sons do Oceano
+                </button>
+            </div>
+            <!-- Conteúdo dos Vídeos -->
+            <div class="edu-content active" id="videos">
+                <div class="content-grid">
+
+                    <!-- Documentário: Segredos Sobre o OCEANO -->
+                    <div class="media-card">
+                        <div class="media-thumbnail">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/pelR5ZqLdIg?si=IXGqqzvPSbtyYAGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-info">
+                            <h4>Documentário: Segredos Sobre o OCEANO</h4>
+                            <p>Um documentário fascinante sobre a vida nos oceanos, mostrando a biodiversidade marinha e os desafios da conservação.</p>
+                            <div class="media-stats">
+                                <span><i class="fas fa-play"></i> 40 min</span>
+                                <span><i class="fas fa-globe"></i> Planet Documentários</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oceano e mudanças climáticas -->
+                    <div class="media-card">
+                        <div class="media-thumbnail">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/-49S5T1hZWE?si=spVQTNqGtnoqqP8X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-info">
+                            <h4>Oceano e mudanças climáticas</h4>
+                            <p>Como os oceanos são afetados pelas mudanças climáticas e seu papel no clima global.</p>
+                            <div class="media-stats">
+                                <span><i class="fas fa-play"></i> 3 min</span>
+                                <span><i class="fas fa-globe"></i> National Geographic Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recifes de Coral: Cidades Submarinas -->
+                    <div class="media-card">
+                        <div class="media-thumbnail">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/JKHR5RPE5WA?si=Bc3_3e9FFENcD5d-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-info">
+                            <h4>Recifes de Coral: Cidades Submarinas</h4>
+                            <p>Explore a biodiversidade incrível dos recifes de coral e sua importância para o ecossistema.</p>
+                            <div class="media-stats">
+                                <span><i class="fas fa-play"></i> 18 min</span>
+                                <span><i class="fas fa-globe"></i> Mundo Feroz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- O Impacto do Plástico nos Oceanos -->
+                    <div class="media-card">
+                        <div class="media-thumbnail">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/-UmOPQRpRIE?si=FuLYapFQ92e4G5Nq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-info">
+                            <h4>O Impacto do Plástico nos Oceanos</h4>
+                            <p>Entenda como a poluição plástica afeta a vida marinha e o que podemos fazer.</p>
+                            <div class="media-stats">
+                                <span><i class="fas fa-play"></i> 7 min</span>
+                                <span><i class="fas fa-globe"></i> Nossa ecologia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comunicação Aquática -->
+                    <div class="media-card">
+                        <div class="media-thumbnail">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/NnBa_emmm1Q?si=jbD4C2npKpIVkfqx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-info">
+                            <h4>O Canto das animais: Comunicação Aquática</h4>
+                            <p>Descubra os mistérios da comunicação das baleias e dos golfinhos, e como eles se localizam nos oceanos.</p>
+                            <div class="media-stats">
+                                <span><i class="fas fa-play"></i> 8 min</span>
+                                <span><i class="fas fa-globe"></i> Luz, Câmera e Ciência USP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ecossistemas Aquáticos -->
+                    <div class="media-card">
+                        <div class="media-thumbnail">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/tYJC-KWJiWw?si=9frV948hLuQQLykQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-info">
+                            <h4>Ecossistemas Aquáticos</h4>
+                            <p>Conheça a rica biodiversidade dos ecossistemas aquáticos.</p>
+                            <div class="media-stats">
+                                <span><i class="fas fa-play"></i> 4 min</span>
+                                <span><i class="fas fa-globe"></i> Nossa ecologia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo dos Artigos -->
+            <div class="edu-content" id="articles">
+                <div class="articles-grid">
+                    <!-- Biodiversidade Marinha -->
+                    <article class="article-card" onclick="window.open('https://123ecos.com.br/docs/biodiversidade-marinha/', '_blank')" style="cursor: pointer;">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1515467699666-4adf84b2fd42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZpZGElMjBtYXJpbmhhfGVufDB8fDB8fHww" alt="Biodiversidade Marinha">
+                            <div class="external-link-badge">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Biodiversidade</span>
+                            <h4>A Importância da Biodiversidade Marinha</h4>
+                            <p>Os oceanos abrigam uma diversidade de vida incrível que é fundamental para o equilíbrio do planeta. Descubra como cada espécie contribui para os ecossistemas marinhos e por que sua preservação é crucial.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-globe"></i> 123ecos</span>
+                                <span><i class="fas fa-clock"></i> 10 min de leitura</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Mudanças Climáticas -->
+                    <article class="article-card" onclick="window.open('https://mundoeducacao.uol.com.br/geografia/influencia-dos-oceanos-sobre-clima.htm', '_blank')" style="cursor: pointer;">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNsaW1hJTIwZ2xvYmFsfGVufDB8fDB8fHww" alt="Mudanças Climáticas">
+                            <div class="external-link-badge">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="article-content">
+                            <span class="article-category">Clima</span>
+                            <h4>Como os Oceanos Regulam o Clima Global</h4>
+                            <p>Entenda o papel crucial dos oceanos na regulação do clima terrestre e como as mudanças climáticas os afetam.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-globe"></i> Mundo Educação</span>
+                                <span><i class="fas fa-clock"></i> 2 min de leitura</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Conservação -->
+                    <article class="article-card" onclick="window.open('https://www.tnc.org.br/o-que-fazemos/nossas-prioridades/proteger-terras-e-aguas/protegendo-nossos-oceanos/', '_blank')" style="cursor: pointer;">
+                        <div class="article-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1663039947303-0fad26f737b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvdGUlQzMlQTclQzMlQTNvJTIwb2NlYW5vfGVufDB8fDB8fHww" alt="Conservação">
+                            <div class="external-link-badge">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Conservação</span>
+                            <h4>Estratégias de Conservação Marinha</h4>
+                            <p>Conheça as principais estratégias utilizadas para proteger e conservar os ecossistemas marinhos ao redor do mundo.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-globe"></i> TNC</span>
+                                <span><i class="fas fa-clock"></i> 6 min de leitura</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Microplásticos -->
+                    <article class="article-card" onclick="window.open('https://idec.org.br/dicas-e-direitos/microplasticos-nos-oceanos-e-no-organismo-humano-por-que-voce-deve-se-preocupar-com', '_blank')" style="cursor: pointer;">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1670327370312-01cc5f58bbeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWljcm9wbCVDMyVBMXN0aWNvfGVufDB8fDB8fHww" alt="Microplásticos">
+                            <div class="external-link-badge">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Poluição</span>
+                            <h4>Microplásticos: A Ameaça Invisível</h4>
+                            <p>Como os microplásticos estão invadindo nossos oceanos e afetando toda a cadeia alimentar marinha.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-globe"></i> IDEC</span>
+                                <span><i class="fas fa-clock"></i> 4 min de leitura</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tecnologia -->
+                    <article class="article-card" onclick="window.open('https://www.spinnaker-watches.com.br/blogs/novidades/o-papel-da-tecnologia-na-protecao-do-mar-inovacoes-para-a-preservacao-dos-oceanos?srsltid=AfmBOoqxBnfo_3jq5Y4fmo-y5I_ZA0ms46uWSs-0SFQMhJN6V9r7T7Od', '_blank')" style="cursor: pointer;">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlY25vbG9naWF8ZW58MHx8MHx8fDA%3D" alt="Tecnologia Marinha">
+                            <div class="external-link-badge">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Tecnologia</span>
+                            <h4>Tecnologia Marinha: Inovações e Desafios</h4>
+                            <p>Explore as inovações em tecnologia marinha para proteger nossos oceanos.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-globe"></i> Spinnaker</span>
+                                <span><i class="fas fa-clock"></i> 4 min de leitura</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Tartarugas Ancestrais -->
+                    <article class="article-card" onclick="window.open('https://outraspalavras.net/terraeantropoceno/tartarugas-marinhas-gps-e-o-antropoceno/', '_blank')" style="cursor: pointer;">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRhcnRhcnVnYSUyMG1hcmluaGF8ZW58MHx8MHx8fDA%3D" alt="Navegadores Ancestrais">
+                            <div class="external-link-badge">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Espécies</span>
+                            <h4>Tartarugas Marinhas: Navegadores Ancestrais</h4>
+                            <p>Explore a vida fascinante das tartarugas marinhas e como elas navegam pelos oceanos.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-globe"></i> Outras Palavras</span>
+                                <span><i class="fas fa-clock"></i> 6 min de leitura</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Sons do Oceano -->
+            <div class="edu-content" id="sounds">
+                <div class="sounds-container">
+                    <h3>Ouça os Sons do Oceano</h3>
+                    <p>Conecte-se com o oceano através desta coleção de sons naturais.</p>
+                    
+                    <div class="audio-players">
+                        <div class="audio-card">
+                            <div class="audio-info">
+                                <h4><i class="fas fa-water"></i> Ondas Suaves</h4>
+                                <p>Som de ondas quebrando na praia</p>
+                            </div>
+                            <div class="audio-controls">
+                                <audio id="audio-waves" src="./src/assets/audios/waves.mp3"></audio>
+                                <button class="play-btn" data-audio="waves">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="audio-progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-info">
+                                <h4><i class="fas fa-music"></i> Canto das Baleias</h4>
+                                <p>Sons místicos das baleias</p>
+                            </div>
+                            <div class="audio-controls">
+                                <audio id="audio-whales" src="./src/assets/audios/whales.mp3"></audio>
+                                <button class="play-btn" data-audio="whales">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="audio-progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-info">
+                                <h4><i class="fas fa-wind"></i> Tempestade no Mar</h4>
+                                <p>Som do oceano em tempestade</p>
+                            </div>
+                            <div class="audio-controls">
+                                <audio id="audio-storm" src="./src/assets/audios/storm.mp3"></audio>
+                                <button class="play-btn" data-audio="storm">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="audio-progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/assets/script/engine.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Incluindo o Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="./src/assets/style/home.css">
+    <link rel="icon" type="image/png" href="./src/assets/images/whale.png">
+    <title>Sacred Ocean</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-water"></i>
+                <span>Sacred Ocean</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="ongs.html" class="nav-link">ONGs</a></li>
+                <li><a href="educacao.html" class="nav-link">Educação Marinha</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="bg-video">
+            <video autoplay loop muted>
+                <source src="./src/assets/videos/turtle-background.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Bem-vindo ao Sacred Ocean</h1>
+                <p>Uma plataforma dedicada à proteção dos oceanos através da tecnologia</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Vídeos Educativos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Artigos Publicados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">ONGs Cadastradas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/assets/script/engine.js" defer></script>
+</body>
+</html>
