@@ -6,7 +6,7 @@ Sacred Ocean é uma plataforma web dedicada à conscientização sobre a preserv
 
 O Sacred Ocean nasceu da paixão pela tecnologia e pelo meio ambiente. O objetivo é facilitar o acesso a informações relevantes sobre a vida marinha, ONGs atuantes no Brasil e conteúdos educativos para todos que desejam aprender e contribuir para a conservação dos oceanos.
 
-## 🐋 Funcionalidades
+## 🐢 Funcionalidades
 
 - **Página Inicial:** Apresentação do projeto e suas principais funcionalidades.
 - **ONGs:** Lista de ONGs nacionais e internacionais com atuação no Brasil, com links diretos para seus sites.
