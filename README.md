@@ -33,7 +33,7 @@ O Sacred Ocean foi projetado para funcionar perfeitamente em celulares, tablets 
 ## 👤 Autor
 
 Henrique Baptista Bandeira  
-Desenvolvedor web apaixonado por tecnologia e conservação ambiental.  
+Desenvolvedor web apaixonado por tecnologia e conservação ambiental.  <br>
 [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/henrique-baptista-bandeira)
 [![GitHub](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SpyHenry)
 
@@ -43,6 +43,6 @@ Desenvolvedor web apaixonado por tecnologia e conservação ambiental.
 
 **Sacred Ocean** 🌊 **Conectando pessoas à preservação dos oceanos através da tecnologia**
 
-*Desenvolvido com 💙 por [Henrique Baptista Bandeira](https://github.com/SpyHenry)*
+*Desenvolvido com 💙 por **Henrique Baptista Bandeira***
 
 </div>
