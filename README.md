@@ -1,5 +1,5 @@
 # Sacred Ocean 🐋
-
+![Sacred Ocean Preview](./preview-sacred-ocean.png) <br>
 Sacred Ocean é uma plataforma web dedicada à conscientização sobre a preservação dos oceanos, reunindo informações sobre ONGs marinhas, recursos educacionais e sons do oceano para inspirar e engajar pessoas na causa ambiental.
 
 ## 🚀 Sobre o Projeto
@@ -38,4 +38,10 @@ Desenvolvedor web apaixonado por tecnologia e conservação ambiental.
 
 ---
 
-**Sacred Ocean** — Conectando pessoas à preservação dos oceanos através da tecnologia e educação!
+<div align="center">
+
+**Sacred Ocean** 🌊 **Conectando pessoas à preservação dos oceanos através da tecnologia**
+
+*Desenvolvido com 💙 por [Henrique Baptista Bandeira](https://github.com/SpyHenry)*
+
+</div>
