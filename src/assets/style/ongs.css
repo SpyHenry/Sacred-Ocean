@@ -191,3 +191,112 @@
     background: rgba(255, 255, 255, 0.2);
     border-color: var(--seafoam);
 }
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+   ======================================== */
+
+/* Mobile Small (até 480px) */
+@media (max-width: 480px) {
+    .ongs-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .ong-card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .ong-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .ong-logo {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .ong-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .gallery-main img {
+        height: 150px;
+    }
+    
+    .ong-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .ong-actions button {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0.6rem;
+    }
+}
+
+/* Mobile Medium (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .ongs-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+    
+    .ong-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .category-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .ong-actions {
+        flex-wrap: wrap;
+    }
+    
+    .ong-actions button {
+        flex: 1 1 calc(50% - 0.25rem);
+        min-width: 120px;
+    }
+}
+
+/* Mobile Large / Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ongs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    
+    .ong-card {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .category-title {
+        text-align: center;
+    }
+}
+

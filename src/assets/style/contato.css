@@ -190,12 +190,204 @@
 }
 
 /* ========================================
-   RESPONSIVIDADE
+   RESPONSIVE DESIGN - MOBILE
    ======================================== */
-@media (max-width: 768px) {
+
+/* Mobile Small (até 480px) */
+@media (max-width: 480px) {
+    .contact-options {
+        margin-top: 30px;
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
     .contact-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .contact-form-section {
+        padding: 20px;
+        border-radius: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .form-header h2 {
+        font-size: 1.3rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .form-header p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .about-content {
+        margin-top: 20px;
+        padding: 0;
+    }
+    
+    .about-section {
+        padding: 15px;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .about-section h3 {
+        font-size: 1.1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        justify-items: center;
+    }
+    
+    .skill-item {
+        padding: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .skill-item i {
+        font-size: 1.3rem;
+    }
+    
+    .skill-item span {
+        font-size: 0.8rem;
+    }
+    
+    .project-card {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .project-tags {
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    
+    .tag {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+    
+    .contact-info-section {
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .contact-card, .social-card, .faq-card {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .social-links {
+        gap: 8px;
+    }
+    
+    .social-link {
+        padding: 10px 12px;
+        justify-content: center;
+    }
+}
+
+/* Mobile Medium (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .contact-options {
+        padding: 0 1.5rem;
+    }
+    
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .contact-form-section {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .form-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .about-section {
+        text-align: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+    
+    .project-tags {
+        justify-content: center;
+    }
+    
+    .contact-info-section {
+        gap: 20px;
+    }
+}
+
+/* Mobile Large / Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
         gap: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .contact-form-section,
+    .contact-info-section {
+        width: 100%;
+    }
+    
+    .about-section {
+        text-align: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+    
+    .project-tags {
+        justify-content: center;
     }
 }
 
@@ -305,29 +497,4 @@
 
 .social-link.email {
     background: linear-gradient(135deg, #ea4335, #d33b2c);
-}
-
-/* Responsive adjustments for about page */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    
-    .skill-item {
-        padding: 10px;
-    }
-    
-    .skill-item i {
-        font-size: 1.5rem;
-    }
-    
-    .about-section {
-        padding: 15px;
-        margin-bottom: 25px;
-    }
-    
-    .project-tags {
-        justify-content: center;
-    }
 }

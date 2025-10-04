@@ -318,3 +318,137 @@
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+   ======================================== */
+
+/* Mobile Small (até 480px) */
+@media (max-width: 480px) {
+    .sounds-container {
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sounds-container h3 {
+        font-size: 1.5rem;
+    }
+    
+    .sounds-container > p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .audio-players {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .audio-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        padding: 0.8rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .audio-info {
+        width: 100%;
+    }
+    
+    .audio-info h4 {
+        justify-content: center;
+        font-size: 1rem;
+    }
+    
+    .audio-info p {
+        font-size: 0.8rem;
+    }
+    
+    .audio-controls {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    
+    .play-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .audio-progress {
+        width: 120px;
+    }
+    
+    .content-grid,
+    .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .media-card,
+    .article-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .education-nav {
+        padding: 0 1rem;
+        gap: 0.5rem;
+    }
+    
+    .edu-tab {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Medium (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .sounds-container {
+        padding: 0 1.5rem;
+    }
+    
+    .audio-players {
+        max-width: 500px;
+    }
+    
+    .audio-card {
+        padding: 1rem;
+    }
+    
+    .audio-controls {
+        gap: 0.8rem;
+    }
+    
+    .audio-progress {
+        width: 130px;
+    }
+    
+    .content-grid,
+    .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+}
+
+/* Mobile Large / Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content-grid,
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .sounds-container {
+        padding: 0 2rem;
+    }
+}
