@@ -4,7 +4,7 @@ Sacred Ocean é uma plataforma web dedicada à conscientização sobre a preserv
 
 ## 🚀 Sobre o Projeto
 
-Link: https://spyhenry.github.io/Sacred-Ocean/
+Link: https://spyhenry.github.io/Sacred-Ocean/ <br>
 O Sacred Ocean nasceu da paixão pela tecnologia e pelo meio ambiente. O objetivo é facilitar o acesso a informações relevantes sobre a vida marinha, ONGs atuantes no Brasil e conteúdos educativos para todos que desejam aprender e contribuir para a conservação dos oceanos.
 
 ## 🐢 Funcionalidades
