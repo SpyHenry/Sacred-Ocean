@@ -89,17 +89,21 @@ body {
 
 .hamburger {
     display: none;
-    flex-direction: column;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--light-blue);
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--seafoam);
+    border-radius: 8px;
+    background: rgba(79, 179, 217, 0.1);
+    transition: all 0.3s ease;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background: var(--light-blue);
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 3px;
+.hamburger:hover {
+    background: rgba(79, 179, 217, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Sections */
@@ -376,19 +380,11 @@ body {
     }
 
     .hamburger {
-        display: flex;
+        display: block;
     }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
+    .hamburger.active {
+        background: rgba(79, 179, 217, 0.3);
     }
 
     .nav-container {

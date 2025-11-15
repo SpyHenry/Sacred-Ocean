@@ -4,9 +4,41 @@ function initMobileNav() {
     const navMenu = document.getElementById('nav-menu');
 
     if (hamburger && navMenu) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
+        // Acessibilidade
+        hamburger.setAttribute('role', 'button');
+        hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-controls', 'nav-menu');
+        hamburger.tabIndex = 0;
+
+        const toggle = () => {
+            const isActive = hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            hamburger.setAttribute('aria-label', isActive ? 'Fechar menu' : 'Abrir menu de navegação');
+        };
+
+        // Click
+        hamburger.addEventListener('click', toggle);
+
+        // Teclado
+        hamburger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggle();
+            }
+        });
+
+        // Fecha ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (navMenu.classList.contains('active') && 
+                !hamburger.contains(e.target) && 
+                !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
+            }
         });
     }
 }
