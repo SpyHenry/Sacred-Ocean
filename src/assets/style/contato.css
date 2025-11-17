@@ -18,6 +18,29 @@
     filter: brightness(0.3) saturate(1.2);
 }
 
+/* Tech for the Planet Tag */
+.tech-planet-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, rgba(79, 179, 217, 0.2), rgba(0, 168, 204, 0.2));
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--seafoam);
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: var(--light-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 15px;
+    animation: fadeInUp 1s ease 0.4s both;
+    box-shadow: 0 4px 15px rgba(79, 179, 217, 0.3);
+}
+
+.tech-planet-tag i {
+    color: var(--seafoam);
+    font-size: 1.2rem;
+}
+
 .contact-options {
     margin-top: 60px;
 }
