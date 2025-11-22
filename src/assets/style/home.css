@@ -82,14 +82,14 @@
     backdrop-filter: blur(16px);
     border: 1px solid rgba(79, 179, 217, 0.25);
     border-radius: 14px;
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 0.8rem;
     text-align: center;
     transition: all 0.35s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 1 / 1;
+    min-height: 140px;
     box-shadow: 0 4px 18px -4px rgba(0,0,0,0.5);
 }
 
@@ -101,7 +101,7 @@
 
 .stat-number {
     display: block;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--seafoam);
     margin-bottom: 0.3rem;
@@ -109,7 +109,7 @@
 }
 
 .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.85);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -118,15 +118,15 @@
 
 /* Icon style for info & fauna */
 .stat-icon {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background: rgba(79, 179, 217, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.8rem;
-    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
     color: var(--seafoam);
     box-shadow: 0 0 0 2px rgba(79, 179, 217, 0.25);
 }
@@ -144,8 +144,8 @@
     box-shadow: 0 0 0 2px rgba(34,197,94,0.35);
 }
 .fauna-icon img {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
 }
