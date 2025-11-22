@@ -452,3 +452,285 @@
         padding: 0 2rem;
     }
 }
+
+/* Species Section - Espécies Ameaçadas */
+.species-section {
+    text-align: center;
+}
+
+.species-section h3 {
+    color: var(--seafoam);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.species-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.species-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    aspect-ratio: 3/4;
+    border: 2px solid rgba(79, 179, 217, 0.3);
+}
+
+.species-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(79, 179, 217, 0.5);
+    border-color: var(--seafoam);
+}
+
+.species-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.species-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.species-card:hover .species-image img {
+    transform: scale(1.1);
+}
+
+.species-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 61, 92, 0.9), transparent);
+}
+
+.species-label {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    color: var(--light-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.species-cta {
+    margin-top: 2rem;
+}
+
+.btn-icmbio {
+    background: var(--ocean-blue);
+    color: white;
+    border: 2px solid var(--seafoam);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(79, 179, 217, 0.4);
+}
+
+.btn-icmbio:hover {
+    background: var(--seafoam);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(79, 179, 217, 0.6);
+}
+
+/* Responsive para Species Grid */
+@media (max-width: 768px) {
+    .species-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .species-section h3 {
+        font-size: 2rem;
+    }
+    
+    .species-label {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .species-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Recommendations Section Styles */
+.recommendations-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.recommendations-section h3 {
+    font-size: 2.5rem;
+    color: var(--seafoam);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recommendations-section > p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.recommendation-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 105, 148, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--seafoam);
+    box-shadow: 0 15px 40px rgba(0, 105, 148, 0.4);
+}
+
+.recommendation-poster {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(135deg, var(--ocean-blue), var(--deep-blue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.recommendation-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.recommendation-card:hover .recommendation-poster img {
+    transform: scale(1.05);
+}
+
+.recommendation-info {
+    padding: 1.5rem;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation-info h4 {
+    color: var(--light-blue);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.recommendation-year,
+.recommendation-director {
+    color: var(--seafoam);
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.recommendation-info p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.movie-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.movie-tags .tag {
+    background: rgba(0, 105, 148, 0.25);
+    color: var(--light-blue);
+    padding: 0.35rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(0, 105, 148, 0.4);
+    transition: all 0.3s ease;
+}
+
+.recommendation-card:hover .movie-tags .tag {
+    background: rgba(79, 179, 217, 0.3);
+    color: var(--seafoam);
+    border-color: var(--seafoam);
+}
+
+/* Responsive para Recommendations Grid */
+@media (max-width: 768px) {
+    .recommendations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .recommendations-section h3 {
+        font-size: 2rem;
+    }
+    
+    .recommendation-info h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .recommendation-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

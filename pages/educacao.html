@@ -20,7 +20,7 @@
                 <span>Sacred Ocean</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html" class="nav-link">Início</a></li>
                 <li><a href="./ongs.html" class="nav-link">ONGs</a></li>
                 <li><a href="./educacao.html" class="nav-link active">Educação Marinha</a></li>
                 <li><a href="./contato.html" class="nav-link">Sobre</a></li>
@@ -46,7 +46,11 @@
             
             <!-- Categorias de Conteúdo -->
             <div class="education-nav">
-                <button class="edu-tab active" data-tab="videos">
+                <button class="edu-tab active" data-tab="recommendations">
+                    <i class="fas fa-film"></i>
+                    Recomendações
+                </button>
+                <button class="edu-tab" data-tab="videos">
                     <i class="fas fa-play-circle"></i>
                     Vídeos
                 </button>
@@ -58,9 +62,126 @@
                     <i class="fas fa-volume-up"></i>
                     Sons do Oceano
                 </button>
+                <button class="edu-tab" data-tab="species">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Veja as Espécies em Perigo
+                </button>
             </div>
+            
+            <!-- Conteúdo das Recomendações -->
+            <div class="edu-content active" id="recommendations">
+                <div class="recommendations-section">
+                    <h3>Filmes e Documentários Recomendados</h3>
+                    <p>Explore obras que retratam a conexão sagrada entre humanidade e natureza, focadas em oceanos e vida marinha.</p>
+                    
+                    <div class="recommendations-grid">
+                        <!-- A Marcha dos Pinguins -->
+                        <div class="recommendation-card">
+                            <div class="recommendation-poster">
+                                <img src="../src/assets/images/recomendações/marcha-dos-pinguins.png" alt="A Marcha dos Pinguins">
+                            </div>
+                            <div class="recommendation-info">
+                                <h4>A Marcha dos Pinguins</h4>
+                                <span class="recommendation-year">2005</span>
+                                <p>Um clássico sobre vida selvagem, mudanças climáticas e resiliência animal. Emocionante jornada de sobrevivência.</p>
+                                <div class="movie-tags">
+                                    <span class="tag">Vida Selvagem</span>
+                                    <span class="tag">Resiliência</span>
+                                    <span class="tag">Antártica</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Avatar 1 e 2 -->
+                        <div class="recommendation-card">
+                            <div class="recommendation-poster">
+                                <img src="../src/assets/images/recomendações/avatar.png" alt="Avatar; Avatar: O Caminho da Água">
+                            </div>
+                            <div class="recommendation-info">
+                                <h4>Avatar (2009) & Avatar: O Caminho da Água (2022)</h4>
+                                <span class="recommendation-director">Direção: James Cameron</span>
+                                <p>Conexão espiritual com a natureza e o oceano como entidade viva e divina. O segundo filme explora a cultura aquática e vida marinha bioluminescente.</p>
+                                <div class="movie-tags">
+                                    <span class="tag">Oceano Sagrado</span>
+                                    <span class="tag">Conexão Espiritual</span>
+                                    <span class="tag">Vida Marinha</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Life of Pi -->
+                        <div class="recommendation-card">
+                            <div class="recommendation-poster">
+                                <img src="../src/assets/images/recomendações/life-of-pi.png" alt="As Aventuras de Pi">
+                            </div>
+                            <div class="recommendation-info">
+                                <h4>Life of Pi (As Aventuras de Pi)</h4>
+                                <span class="recommendation-year">2012</span>
+                                <p>O mar como força espiritual, transformação humana e jornada interior. Uma experiência visual e filosófica.</p>
+                                <div class="movie-tags">
+                                    <span class="tag">Espiritualidade</span>
+                                    <span class="tag">Jornada Interior</span>
+                                    <span class="tag">Mar Sagrado</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Moana -->
+                        <div class="recommendation-card">
+                            <div class="recommendation-poster">
+                                <img src="../src/assets/images/recomendações/moana.png" alt="Moana">
+                            </div>
+                            <div class="recommendation-info">
+                                <h4>Moana</h4>
+                                <span class="recommendation-year">2016 • Disney</span>
+                                <p>A água como entidade viva; o oceano literalmente escolhe e protege a protagonista. Perfeito para a mensagem "o mar é sagrado".</p>
+                                <div class="movie-tags">
+                                    <span class="tag">Água Viva</span>
+                                    <span class="tag">Cultura Polinésia</span>
+                                    <span class="tag">Aventura</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nosso Planeta -->
+                        <div class="recommendation-card">
+                            <div class="recommendation-poster">
+                                <img src="../src/assets/images/recomendações/our-planet.png" alt="Nosso Planeta">
+                            </div>
+                            <div class="recommendation-info">
+                                <h4>Nosso Planeta</h4>
+                                <span class="recommendation-year">2019 • Netflix</span>
+                                <p>Documentário visualmente impressionante sobre biodiversidade global, impacto humano e mudanças climáticas.</p>
+                                <div class="movie-tags">
+                                    <span class="tag">Biodiversidade</span>
+                                    <span class="tag">Mudanças Climáticas</span>
+                                    <span class="tag">Documentário</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Seaspiracy -->
+                        <div class="recommendation-card">
+                            <div class="recommendation-poster">
+                                <img src="../src/assets/images/recomendações/seaspiracy.png" alt="Seaspiracy">
+                            </div>
+                            <div class="recommendation-info">
+                                <h4>Seaspiracy</h4>
+                                <span class="recommendation-year">2021 • Netflix</span>
+                                <p>Impacto da pesca industrial, poluição e destruição dos oceanos. Focado em extinção marinha e impacto humano.</p>
+                                <div class="movie-tags">
+                                    <span class="tag">Pesca Industrial</span>
+                                    <span class="tag">Conservação</span>
+                                    <span class="tag">Impacto Humano</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Conteúdo dos Vídeos -->
-            <div class="edu-content active" id="videos">
+            <div class="edu-content" id="videos">
                 <div class="content-grid">
 
                     <!-- Documentário: Segredos Sobre o OCEANO -->
@@ -325,6 +446,62 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Espécies em Perigo -->
+            <div class="edu-content" id="species">
+                <div class="species-section">
+                    <h3>Espécies Marinhas Ameaçadas</h3>
+                    <p>Cinco espécies emblemáticas em risco – clique para saber mais.</p>
+                    
+                    <div class="species-grid">
+                        <!-- Tartaruga-marinha -->
+                        <div class="species-card" onclick="window.open('https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/tartarugas-marinhas-e-biodiversidade-marinha-do-leste/o-que-fazemos/conheca-as-tartarugas-marinhas', '_blank')" style="cursor: pointer;">
+                            <div class="species-image">
+                                <img src="https://images.unsplash.com/photo-1580603474920-aa3332b2c40f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRhcnRhcnVnYSUyMG1hcmluaGF8ZW58MHx8MHx8fDA%3D" alt="Tartaruga Marinha">
+                            </div>
+                            <div class="species-label">TARTARUGA-MARINHA</div>
+                        </div>
+
+                        <!-- Baleia-azul -->
+                        <div class="species-card" onclick="window.open('https://salveabaleiaazul.arayara.org/', '_blank')" style="cursor: pointer;">
+                            <div class="species-image">
+                                <img src="https://images.unsplash.com/photo-1698472505070-6d3b90afb530?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFsZWlhJTIwYXp1bHxlbnwwfHwwfHx8MA%3D%3D" alt="Baleia Azul">
+                            </div>
+                            <div class="species-label">BALEIA-AZUL</div>
+                        </div>
+
+                        <!-- Tubarão-martelo -->
+                        <div class="species-card" onclick="window.open('https://blog.padi.com/pt-br/conservacao-do-tubarao-martelo-o-que-voce-precisa-saber/', '_blank')" style="cursor: pointer;">
+                            <div class="species-image">
+                                <img src="https://plus.unsplash.com/premium_photo-1708433274133-4a9287eec087?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHViYXIlQzMlQTNvJTIwbWFydGVsb3xlbnwwfHwwfHx8MA%3D%3D" alt="Tubarão Martelo">
+                            </div>
+                            <div class="species-label">TUBARÃO-MARTELO</div>
+                        </div>
+
+                        <!-- Golfinho -->
+                        <div class="species-card" onclick="window.open('https://golfinhorotador.org.br/sobre-nos/projeto-golfinho-rotador/', '_blank')" style="cursor: pointer;">
+                            <div class="species-image">
+                                <img src="https://images.unsplash.com/photo-1757676309747-368d8a443a3e?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Golfinho">
+                            </div>
+                            <div class="species-label">GOLFINHO-ROTADOR</div>
+                        </div>
+
+                        <!-- Peixe-boi -->
+                        <div class="species-card" onclick="window.open('https://vivaopeixeboimarinho.org/', '_blank')" style="cursor: pointer;">
+                            <div class="species-image">
+                                <img src="https://images.unsplash.com/photo-1561486462-89834a03cb72?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVpeGUlMjBib2klMjBtYXJpbmhvfGVufDB8fDB8fHww" alt="Peixe Boi">
+                            </div>
+                            <div class="species-label">PEIXE-BOI-MARINHO</div>
+                        </div>
+                    </div>
+                    
+                    <div class="species-cta">
+                        <button class="btn-icmbio" onclick="window.open('https://salve.icmbio.gov.br/#/', '_blank')">
+                            Ver lista completa no ICMBio
+                        </button>
                     </div>
                 </div>
             </div>
