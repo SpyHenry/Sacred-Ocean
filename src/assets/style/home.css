@@ -68,9 +68,12 @@
 
 .hero-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stat {
@@ -79,14 +82,14 @@
     backdrop-filter: blur(16px);
     border: 1px solid rgba(79, 179, 217, 0.25);
     border-radius: 14px;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     transition: all 0.35s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 150px;
+    aspect-ratio: 1 / 1;
     box-shadow: 0 4px 18px -4px rgba(0,0,0,0.5);
 }
 
@@ -152,9 +155,17 @@
 }
 
 @media (max-width: 600px) {
-    .stat { min-height: 130px; }
-    .stat-number { font-size: 2.2rem; }
-    .stat-icon { width: 50px; height: 50px; }
+    .hero-stats {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    .stat { 
+        padding: 1rem 0.5rem;
+    }
+    .stat-number { font-size: 2rem; }
+    .stat-label { font-size: 0.7rem; }
+    .stat-icon { width: 45px; height: 45px; font-size: 1.2rem; }
+    .fauna-icon img { width: 32px; height: 32px; }
 }
 
 /* Loading Content */
@@ -186,6 +197,11 @@
    RESPONSIVE HOME PAGE
    ======================================== */
 @media (max-width: 768px) {
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 450px;
+    }
+    
     .hero-text h1 {
         font-size: 2.5rem;
     }
