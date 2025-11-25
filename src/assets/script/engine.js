@@ -61,6 +61,8 @@ function initGallery() {
 
 // Modal de Imagem - Ampliação Simples
 function initSimpleLightbox() {
+    // Se a página não tiver galeria de ONG, não inicializa (evita aparecer 'Imagem ampliada')
+    if (!document.querySelector('.ong-gallery')) return;
     // cria overlay se não existir
     let overlay = document.querySelector('.lb-overlay');
     if (!overlay) {
