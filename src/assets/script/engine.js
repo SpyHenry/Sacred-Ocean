@@ -59,6 +59,94 @@ function initGallery() {
     });
 }
 
+// Modal de Imagem - Ampliação Simples
+function initSimpleLightbox() {
+    // cria overlay se não existir
+    let overlay = document.querySelector('.lb-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'lb-overlay';
+        overlay.innerHTML = `
+            <div class="lb-container" role="dialog" aria-modal="true" aria-label="Visualizador de imagens">
+                <button class="lb-nav lb-prev" aria-label="Imagem anterior">&#10094;</button>
+                <img class="lb-img" alt="Imagem ampliada" />
+                <button class="lb-nav lb-next" aria-label="Próxima imagem">&#10095;</button>
+                <button class="lb-close" aria-label="Fechar">&times;</button>
+                <div class="lb-counter" aria-live="polite"></div>
+            </div>`;
+        document.body.appendChild(overlay);
+    }
+
+    const lbImg = overlay.querySelector('.lb-img');
+    const btnPrev = overlay.querySelector('.lb-prev');
+    const btnNext = overlay.querySelector('.lb-next');
+    const btnClose = overlay.querySelector('.lb-close');
+    const counter = overlay.querySelector('.lb-counter');
+
+    let list = [];
+    let index = 0;
+
+    function open(images, start) {
+        list = images;
+        index = start;
+        show();
+        overlay.classList.add('active');
+        btnClose.focus();
+        document.addEventListener('keydown', onKey);
+    }
+
+    function close() {
+        overlay.classList.remove('active');
+        document.removeEventListener('keydown', onKey);
+    }
+
+    function onKey(e) {
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'ArrowLeft') prev();
+    }
+
+    function show() {
+        lbImg.src = list[index];
+        counter.textContent = `${index + 1} / ${list.length}`;
+    }
+
+    function prev() { index = (index - 1 + list.length) % list.length; show(); }
+    function next() { index = (index + 1) % list.length; show(); }
+
+    btnPrev.addEventListener('click', prev);
+    btnNext.addEventListener('click', next);
+    btnClose.addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+
+    // adicionar botão lupa a cada galeria
+    document.querySelectorAll('.gallery-main').forEach(main => {
+        if (!main.querySelector('.zoom-btn')) {
+            const btn = document.createElement('button');
+            btn.className = 'zoom-btn';
+            btn.type = 'button';
+            btn.setAttribute('aria-label', 'Ampliar galeria');
+            btn.innerHTML = '<i class="fas fa-search-plus"></i>';
+            main.appendChild(btn);
+            btn.addEventListener('click', () => open(getSources(main), 0));
+        }
+        const img = main.querySelector('img');
+        if (img) {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', () => open(getSources(main), 0));
+        }
+    });
+
+    function getSources(main) {
+        const gallery = main.closest('.ong-gallery');
+        const arr = [];
+        const mainImg = gallery.querySelector('.gallery-main img');
+        if (mainImg) arr.push(mainImg.src);
+        gallery.querySelectorAll('.gallery-thumbs img').forEach(t => arr.push(t.src));
+        return arr;
+    }
+}
+
 // Education Tabs
 function initEducationTabs() {
     const eduTabs = document.querySelectorAll('.edu-tab');
@@ -147,4 +235,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initEducationTabs();
     initONGLinks();
     initOceanSounds();
+    initSimpleLightbox();
 });
